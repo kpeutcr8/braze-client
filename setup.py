@@ -2,7 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 NAME = "braze-client-p311"
-VERSION = "2.3.3"
+VERSION = "0.0.1"
 
 REQUIRES = ["requests >=2.21.0, <3.0.0", "tenacity >=6.0.0]
 
@@ -18,7 +18,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kpeutcr8/braze-client",
-    author_email="mail@dtatarkin.ru",
+    author_email="kpeutcr8@yandex.ru",
     keywords=["Appboy", "Braze"],
     install_requires=REQUIRES,
     extras_require=EXTRAS,
