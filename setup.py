@@ -4,7 +4,7 @@ from setuptools import setup
 NAME = "braze-client-p311"
 VERSION = "0.0.1"
 
-REQUIRES = ["requests >=2.21.0, <3.0.0", "tenacity =6.0.0"]
+REQUIRES = ["requests >=2.21.0, <3.0.0", "tenacity ==6.0.0"]
 
 EXTRAS = {"dev": ["tox"]}
 
