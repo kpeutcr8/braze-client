@@ -9,7 +9,7 @@ A Python client for the Braze REST API
 Make sure you have Python 2.7+ or 3.6+ installed and run:
 
 ```
-$ git clone https://github.com/dtatarkin/braze-client
+$ git clone https://github.com/kpeutcr8/braze-client
 $ cd braze-client
 $ python setup.py install
 ```
