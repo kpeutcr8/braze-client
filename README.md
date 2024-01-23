@@ -1,8 +1,8 @@
 # braze-client
 A Python client for the Braze REST API
 
-[![Build Status](https://travis-ci.com/dtatarkin/braze-client.svg?branch=master)](https://travis-ci.com/dtatarkin/braze-client)
-[![Coverage](https://codecov.io/gh/dtatarkin/braze-client/branch/master/graph/badge.svg)](https://codecov.io/gh/dtatarkin/braze-client)
+[![Build Status](https://travis-ci.com/kpeutcr8/braze-client.svg?branch=master)](https://travis-ci.com/dtatarkin/braze-client)
+[![Coverage](https://codecov.io/gh/kpeutcr8/braze-client/branch/master/graph/badge.svg)](https://codecov.io/gh/dtatarkin/braze-client)
 
 ### How to install
 
