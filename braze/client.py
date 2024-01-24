@@ -10,6 +10,8 @@ USER_DELETE_ENDPOINT = "/users/delete"
 USER_EXPORT_ENDPOINT = "/users/export/ids"
 #: Endpoint for Scheduled Trigger Campaign Sends
 CAMPAIGN_TRIGGER_SCHEDULE_CREATE = "/campaigns/trigger/schedule/create"
+#: Endpoint fo Trigger Campaign Sends
+CAMPAIGN_TRIGGER_SEND = "/campaigns/trigger/send/"
 MAX_RETRIES = 3
 # Max time to wait between API call retries
 MAX_WAIT_SECONDS = 1.25
@@ -268,6 +270,26 @@ class BrazeClient(object):
             payload["broadcast"] = broadcast
         if audience is not None:
             payload["audience"] = audience
+        if recipients is not None:
+            payload["recipients"] = recipients
+
+        return self.__create_request(payload)
+
+    def campaign_trigger_send(
+            self,
+            campaign_id: str,
+            recipients=None,
+    ):
+        """
+        Send Messages via API Triggered Delivery
+        ref: https://www.braze.com/docs/api/endpoints/messaging/send_messages/post_send_triggered_campaigns/#request-parameters
+
+        :return: json dict response, for example: {"message": "success", "errors": [], "client_error": ""}
+        """
+        self.request_url = self.api_url + CAMPAIGN_TRIGGER_SEND
+
+        payload = {"campaign_id": campaign_id, }
+
         if recipients is not None:
             payload["recipients"] = recipients
 

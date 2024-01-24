@@ -2,7 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 NAME = "braze-client-p311"
-VERSION = "0.0.4"
+VERSION = "0.0.5"
 
 REQUIRES = ["requests >=2.21.0, <3.0.0", "tenacity ==8.2.3"]
 
